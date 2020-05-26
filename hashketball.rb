@@ -205,8 +205,8 @@ def player_numbers(team)
   hash = game_hash()
   output = []
   
-  hash.each do |status, team_details_hash|
-    if team_details_hash[:name] == team_name
+  hash.each do |status, data|
+    if data[:name] == team_name
       team_details_hash[:players].each do |player|
         player.each do |key, value|
           if key == :number 
