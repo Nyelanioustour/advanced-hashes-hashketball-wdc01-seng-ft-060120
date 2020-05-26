@@ -201,7 +201,11 @@ def team_names
   output << hash[:away][:team_name]
 end 
 
-def player_numbers
+def player_numbers(team)
+  hash = game_hash()
+  output = []
+  
+  
   
 end
 
