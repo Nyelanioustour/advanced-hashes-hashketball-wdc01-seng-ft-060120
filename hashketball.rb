@@ -210,8 +210,10 @@ def player_numbers(team)
  if hash[:away][:team_name] == team
    hash.each do |status, data|
    data.each do |element, key|
-     if element == :players
+     if data[:team_name] == team
+       if element == :players
        new_hash = key
+       end
      end
    end
    end
@@ -230,7 +232,11 @@ def player_numbers(team)
  end
  
   binding.pry 
-  output << 
+  count = 1
+  while count < new_hash.length do
+      output << new_hash[count][:number]
+      count += 1
+    end
   output
 end
 
