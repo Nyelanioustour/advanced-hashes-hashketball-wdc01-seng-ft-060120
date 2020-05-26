@@ -213,7 +213,7 @@ def player_numbers(team)
      end
      binding.pry 
      if data[:team_name] = team 
-       output << new_hash[0][:number] 
+       output << 1  
      end
  
  binding.pry 
