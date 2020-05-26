@@ -209,7 +209,13 @@ def player_numbers(team)
    data.each do |element, key|
    binding.pry
    if data[:team_name] == team
-     output << 
+     count = 0 
+     while count < key.length do
+     output << key[count][:number]
+     end
+    end
+  
+  
    end
    end 
   output
