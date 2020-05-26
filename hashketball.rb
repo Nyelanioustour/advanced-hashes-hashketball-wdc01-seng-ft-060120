@@ -211,16 +211,9 @@ def player_numbers(team)
    if data[:team_name] = team && element == :players
      new_hash = key
    end
-     binding.pry 
-      
-       
- 
- 
-   
-   
-  
    end
    end 
+   binding.pry 
   output
 end
 
