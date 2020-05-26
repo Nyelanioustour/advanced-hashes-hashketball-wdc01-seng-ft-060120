@@ -209,7 +209,7 @@ def player_numbers(team)
    data.each do |element, key|
  
    if data[:team_name] == team
-     if 
+     if element == :players
     key.each do
      count = 0 
      while count < key.length do
