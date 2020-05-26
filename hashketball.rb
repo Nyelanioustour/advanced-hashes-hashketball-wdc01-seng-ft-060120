@@ -208,8 +208,18 @@ def player_numbers(team)
    hash.each do |status, data|
    data.each do |element, key|
      binding.pry 
-     if data[:team_name] == team
-       
+  if data[:team_name] == team
+        if element == :players
+     key.each do 
+       count = 0
+       while count < key.length do
+          output << key[count][:number]
+        end
+        count += 1
+       end
+     end
+    end
+  end
  end
  end
   
