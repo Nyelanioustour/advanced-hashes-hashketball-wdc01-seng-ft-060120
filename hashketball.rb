@@ -240,7 +240,9 @@ def player_numbers(team)
   output
 end
 
-def player_stats
+def player_stats(player)
+  
+  
   
 end
 
