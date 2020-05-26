@@ -211,7 +211,7 @@ def player_numbers(team)
      if element == :players
      new_hash = key
      end
-     binding.pry 
+    # binding.pry 
      if data[:team_name] = team 
        count = 0 
       while count < new_hash.length do
