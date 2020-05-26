@@ -204,6 +204,7 @@ end
 def player_numbers(team)
   hash = game_hash()
   output = []
+  new_hash = ""
   
    hash.each do |status, data|
    data.each do |element, key|
