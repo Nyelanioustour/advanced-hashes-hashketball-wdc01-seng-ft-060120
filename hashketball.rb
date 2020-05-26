@@ -217,6 +217,15 @@ def player_numbers(team)
    end
  end
  
+ if hash[:home][:team_name] == team
+   hash.each do |status, data|
+   data.each do |element, key|
+     if element == :players
+       new_hash = key
+     end
+   end
+   end
+ 
   binding.pry 
   output << 
   output
