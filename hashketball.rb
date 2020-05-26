@@ -209,10 +209,13 @@ def player_numbers(team)
    data.each do |element, key|
  
    if data[:team_name] == team
-    key.each do |stats, figs|
-      binding.pry
-    end
-  end
+     if element == :players
+     new_hash = key
+   end
+ end
+ binding.pry 
+   
+   
   
    end
    end 
