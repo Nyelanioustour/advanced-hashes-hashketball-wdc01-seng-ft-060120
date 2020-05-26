@@ -215,7 +215,9 @@ def player_numbers(team)
      if data[:team_name] = team 
        count = 0 
       while count < new_hash.length do
-       output << 1  
+       output << new_hash[0][:number]
+       count += 1
+      end
      
      end
  
