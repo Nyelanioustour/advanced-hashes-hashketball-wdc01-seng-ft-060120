@@ -206,7 +206,9 @@ def player_numbers(team)
   output = []
   
   if hash[:home][:team_name] == team
-    hash.each do 
+   
+   
+   
   elsif hash[:away][:team_name] == team
   
   end
