@@ -205,7 +205,11 @@ def player_numbers(team)
   hash = game_hash()
   output = []
   
-  
+   hash.each do |status, data|
+   data.each do |element, key|
+     binding.pry 
+ end
+ end
   
 end
 
