@@ -214,6 +214,7 @@ def player_numbers(team)
      count = 0 
      while count < key.length do
      output << key[count][:number]
+     count += 1 
      end
     end
   end
