@@ -226,7 +226,7 @@ def player_numbers(team)
    end
  end
   binding.pry 
-  
+  output << 
   output
 end
 
