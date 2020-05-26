@@ -208,6 +208,7 @@ def player_numbers(team)
    hash.each do |status, data|
    data.each do |element, key|
    binding.pry
+   if 
    end
    end 
   output
