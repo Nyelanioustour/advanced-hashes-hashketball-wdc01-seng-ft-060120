@@ -258,7 +258,7 @@ def player_stats(player)
        end
      end
     end
-   binding.pry
+  
 end
 end
 output
