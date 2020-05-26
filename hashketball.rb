@@ -207,7 +207,7 @@ def player_numbers(team)
   new_hash = ""
   
    hash.each do |status, data|
-   data.each do |element, key
+   data.each do |element, key|
    if data[:team_name] = team && element == :players
      new_hash = key
    end
