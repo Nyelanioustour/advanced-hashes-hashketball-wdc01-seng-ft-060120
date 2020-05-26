@@ -232,7 +232,7 @@ def player_numbers(team)
  end
  
   #binding.pry 
-  count = 1
+  count = 0
   while count < new_hash.length do
       output << new_hash[count][:number]
       count += 1
