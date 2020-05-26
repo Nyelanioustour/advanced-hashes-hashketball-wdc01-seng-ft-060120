@@ -211,8 +211,9 @@ def player_numbers(team)
      new_hash = key
      end
  
-  
+  if new_hash = key
  binding.pry 
+ end
    
    
   
