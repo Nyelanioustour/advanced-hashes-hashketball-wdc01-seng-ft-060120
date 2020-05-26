@@ -204,6 +204,7 @@ end
 def player_numbers(team)
   hash = game_hash()
   output = []
+  new_hash = ""
   
   if hash[:home][:team_name] == team
    hash.each do |status, data|
