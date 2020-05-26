@@ -207,19 +207,15 @@ def player_numbers(team)
   new_hash = ""
   
    hash.each do |status, data|
-   data.each do |element, key|
+   data.each do |element, key
+   if data[:team_name] = team
      if element == :players
      new_hash = key
      end
-    # binding.pry 
-     if data[:team_name] = team 
-       count = 0 
-      while count < new_hash.length do
-       output << new_hash[0][:number]
-       count += 1
-      end
-     
-     end
+   end
+     binding.pry 
+      
+       
  
  
    
