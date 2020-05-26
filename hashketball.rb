@@ -222,7 +222,7 @@ def player_numbers(team)
   end
  end
  end
-  output
+  
 end
 
 def player_stats
