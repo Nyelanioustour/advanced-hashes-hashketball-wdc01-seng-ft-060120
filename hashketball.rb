@@ -207,7 +207,12 @@ def player_numbers(team)
   
    hash.each do |status, data|
    data.each do |element, key|
-   
+   if element == :players
+     key.each do 
+       binding.pry
+     end
+   end
+   end 
   output
 end
 
