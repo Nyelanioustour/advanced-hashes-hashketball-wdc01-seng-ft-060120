@@ -214,9 +214,7 @@ def player_numbers(team)
      end
    end
    end
- end
-   
-  if hash[:away][:team_name] == team
+ elsif hash[:away][:team_name] == team
    hash.each do |status, data|
    data.each do |element, key|
      if element == :players
@@ -225,6 +223,7 @@ def player_numbers(team)
    end
    end
  end
+ 
   binding.pry 
   output << 
   output
