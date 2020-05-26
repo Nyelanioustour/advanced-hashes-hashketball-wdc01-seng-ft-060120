@@ -291,6 +291,22 @@ def big_shoe_rebounds
 end
 end
 
+   hash.each do |status, data|
+   data.each do |element, key| 
+    if element == :players
+     key.each do 
+       count = 0
+       while count < key.length do
+        if key[count][:shoe] == shoesize
+          output = key[count][:rebounds]
+        end
+        count += 1
+       end
+     end
+    end
+   
+end
+end
 
 binding.pry 
 output
