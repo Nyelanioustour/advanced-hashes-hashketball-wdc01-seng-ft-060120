@@ -204,16 +204,9 @@ end
 def player_numbers(team)
   hash = game_hash()
   output = []
-  new_hash = ""
   
-   hash.each do |status, data|
-   data.each do |element, key|
-   if data[:team_name] = team && element == :players
-     new_hash = key
-   end
-   end
-   end 
-   binding.pry 
+  
+  
   output
 end
 
