@@ -241,7 +241,27 @@ def player_numbers(team)
 end
 
 def player_stats(player)
-  
+  hash = game_hash()
+  stats_hash = {}
+  output = ""
+ 
+   hash.each do |status, data|
+   data.each do |element, key| 
+    if element == :players
+     key.each do 
+       count = 0
+       while count < key.length do
+        if key[count][:player_name] == player
+          output = key[count]
+        end
+        count += 1
+       end
+     end
+    end
+   binding.pry
+end
+end
+output
   
   
 end
