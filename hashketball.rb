@@ -213,7 +213,10 @@ def player_numbers(team)
      end
      binding.pry 
      if data[:team_name] = team 
+       count = 0 
+      while count < new_hash.length do
        output << 1  
+     
      end
  
  binding.pry 
