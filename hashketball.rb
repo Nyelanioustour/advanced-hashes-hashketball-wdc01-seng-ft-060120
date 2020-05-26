@@ -211,6 +211,7 @@ def player_numbers(team)
      if element == :players
      new_hash = key
      end
+     binding.pry 
      if data[:team_name] = team 
        output << new_hash[0][:number] 
      end
