@@ -206,10 +206,16 @@ def player_numbers(team)
   output = []
   
   if hash[:home][:team_name] == team
-   
+   hash.each do |status, data|
+   data.each do |element, key|
+     if element == :players
+       new_hash = key
+     end
    
    
   elsif hash[:away][:team_name] == team
+   hash.each do |status, data|
+   data.each do |element, key|
   
   end
     
